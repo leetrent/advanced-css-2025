@@ -6,3 +6,6 @@ $ npm install
 
 $ npm uninstall jquery --save
 
+$ npm run compile:sass
+
+
