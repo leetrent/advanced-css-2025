@@ -39,29 +39,25 @@ html {
         url(../img/hero.jpg);
     background-size: cover;
     background-position: top;
-    /*clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%)*/
-    /*clip-path: polygon(50% 0, 50% 0, 100% 100%, 0 100%);*/
-    /*clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%); */
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%)
-}
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
-.header__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
-}
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
 
-.header__logo {
-    height: 3.5rem;
-}
+    &__logo {
+        height: 3.5rem;
+    }
 
-.header__text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
 }
 
 .heading-primary {
@@ -153,12 +149,12 @@ html {
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba($color-black,.2);
+    box-shadow: 0 1rem 2rem rgba($color-black, .2);
 }
 
 .btn:active {
     transform: translateY(-1px);
-    box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    box-shadow: 0 .5rem 1rem rgba($color-black, .2 );
 }
 
 .btn--white {
