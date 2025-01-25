@@ -1,11 +1,13 @@
-$color-primary: #55c57a;
-$color-primary-light: #7ed56f;
-$color-primary-dark: #28b485;
-$color-grey-dark: #777;
-$color-white: #fff;
-$color-black: #000;
+@use  "abstracts/functions";
+@use  "abstracts/mixins";
+@use  "abstracts/variables" as variables;
 
+@use  "base/animations";
+@use  "base/base";
+@use  "base/typography";
+@use  "base/utilities";
 
+@use  "pages/home";
 
 *,
 *::before,
@@ -20,7 +22,7 @@ body {
     font-weight: 400;
     /* font-size: 16px; */
     line-height: 1.7;
-    color: $color-grey-dark;
+    color: variables.$color-grey-dark;
     padding: 3rem;
     box-sizing: border-box;
 }
@@ -34,8 +36,8 @@ html {
     height: 95vh;
     background-image: linear-gradient(
         to right bottom, 
-        rgba($color-primary-light, 0.8), 
-        rgba($color-primary-dark, 0.8)), 
+        rgba(variables.$color-primary-light, 0.8), 
+        rgba(variables.$color-primary-dark, 0.8)), 
         url(../img/hero.jpg);
     background-size: cover;
     background-position: top;
@@ -61,7 +63,7 @@ html {
 }
 
 .heading-primary {
-    color: $color-white;
+    color: variables.$color-white;
     text-transform: uppercase;
     backface-visibility: hidden;
     margin-bottom: 6rem;
@@ -144,7 +146,7 @@ html {
 
     &:hover {
         transform: translateY(-3px);
-        box-shadow: 0 1rem 2rem rgba($color-black, .2);
+        box-shadow: 0 1rem 2rem rgba(variables.$color-black, .2);
 
         &::after {
             transform: scaleX(1.4) scaleY(1.6);
@@ -154,15 +156,15 @@ html {
 
     &:active {
         transform: translateY(-1px);
-        box-shadow: 0 .5rem 1rem rgba($color-black, .2 );
+        box-shadow: 0 .5rem 1rem rgba(variables.$color-black, .2 );
     }
 
     &--white {
-        background-color: $color-white;
-        color: $color-grey-dark;
+        background-color: variables.$color-white;
+        color: variables.$color-grey-dark;
 
         &::after {
-            background-color: $color-white;
+            background-color: variables.$color-white;
         }
     }
 
