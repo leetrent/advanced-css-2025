@@ -1,0 +1,10 @@
+@use  "../abstracts/variables" as variables;
+.row {
+    max-width: variables.$grid-width;
+    background-color: #eee;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+        margin-bottom: variables.$gutter-vertical;
+    }
+}
