@@ -1,6 +1,9 @@
 @use  "../abstracts/variables" as variables;
 @use  "../abstracts/mixins" as mixins;
 
+.grid-test {
+    display:none;
+}
 
 .row {
     max-width: variables.$grid-width;
