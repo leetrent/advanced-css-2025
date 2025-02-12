@@ -246,6 +246,21 @@ body {
   transform: translateY(-1.5rem) scale(1.03);
 }
 
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+}
+.card__side {
+  background-color: orangered;
+  color: yellow;
+  font-size: 2rem;
+  height: 50rem;
+  transition: all 2s;
+}
+.card:hover .card__side {
+  transform: rotateY(180deg);
+}
+
 .grid-test {
   display: none;
 }
@@ -326,6 +341,12 @@ body {
 }
 .section-features > * {
   transform: skewY(7deg);
+}
+
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 25rem 0 50rem 0;
+  margin-top: -20vh;
 }
 
 /*# sourceMappingURL=style.css.map */
