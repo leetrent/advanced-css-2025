@@ -250,10 +250,10 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem;
+  height: 52rem;
 }
 .card__side {
-  height: 50rem;
+  height: 52rem;
   transition: all 0.8s ease;
   position: absolute;
   top: 0;
@@ -306,7 +306,7 @@ body {
   box-decoration-break: clone;
 }
 .card__heading-span--1 {
-  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), #ff7730, 0.85);
+  background-image: linear-gradient to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85);
 }
 
 .grid-test {
