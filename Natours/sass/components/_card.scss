@@ -7,7 +7,6 @@
     height: 52rem;
 
     &__side {
-        height: 2rem;
         height: 52rem;
         transition: all 0.8s ease;
         position: absolute;
@@ -16,8 +15,8 @@
         width: 100%;
         backface-visibility: hidden;
         border-radius: 3px;
-        overflow:hidden;
-        box-shadow: 0, 1.5rem 4rem rgba(variables.$color-black, 0.15);
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba(variables.$color-black, 0.15);
 
         &--front {
             background-color: variables.$color-white;
@@ -52,6 +51,8 @@
         background-blend-mode: screen;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
 
         &--1 {
             background-image: linear-gradient(to right bottom, variables.$color-secondary-light, variables.$color-secondary-dark), url(../img/nat-5.jpg);
