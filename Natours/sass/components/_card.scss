@@ -29,6 +29,12 @@
             &-1 {
                 background-image: linear-gradient(to right bottom, variables.$color-secondary-light, variables.$color-secondary-dark);
             }
+            &-2 {
+                background-image: linear-gradient(to right bottom, variables.$color-primary-light, variables.$color-primary-dark);
+            }
+            &-3 {
+                background-image: linear-gradient(to right bottom, variables.$color-tertiary-light, variables.$color-tertiary-dark);
+            }
         }
     }
 
@@ -49,6 +55,12 @@
 
         &--1 {
             background-image: linear-gradient(to right bottom, variables.$color-secondary-light, variables.$color-secondary-dark), url(../img/nat-5.jpg);
+        }
+        &--2 {
+            background-image: linear-gradient(to right bottom, variables.$color-primary-light, variables.$color-primary-dark), url(../img/nat-6.jpg);
+        }
+        &--3 {
+            background-image: linear-gradient(to right bottom, variables.$color-tertiary-light, variables.$color-tertiary-dark), url(../img/nat-7.jpg);
         }
     }
 
