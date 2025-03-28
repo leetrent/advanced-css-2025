@@ -21,11 +21,11 @@
             <div class="navigation__background">&nbsp;</div>
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>1.</span>About Natours</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>2.</span>Your Benefits</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>3.</span>Popular Tours</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>4.</span>Stories</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>5.</span>Book Now</a></li>
+                    <li class="navigation__item"><a href="#about-natours" class="navigation__link" onclick="closeNav()"><span>1.</span>About Natours</a></li>
+                    <li class="navigation__item"><a href="#benefits" class="navigation__link" onclick="closeNav()"><span>2.</span>Your Benefits</a></li>
+                    <li class="navigation__item"><a href="#popular-tours" class="navigation__link" onclick="closeNav()"><span>3.</span>Popular Tours</a></li>
+                    <li class="navigation__item"><a href="#stories" class="navigation__link" onclick="closeNav()"><span>4.</span>Stories</a></li>
+                    <li class="navigation__item"><a href="#book-now" class="navigation__link" onclick="closeNav()"><span>5.</span>Book Now</a></li>
                  </ul>
             </nav>
         </div>
@@ -42,7 +42,7 @@
             </div>
         </header>       
         <main>
-            <section class="section-about">
+            <section class="section-about" id="about-natours">
                 <div class="u-center-text u-margin-bottom-large">
                     <h2 class="heading-secondary">Exciting tours for adventurous people</h2>
                 </div>
@@ -61,7 +61,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section-features">
+            <section class="section-features" id="benefits">
                 <div class="row">
                     <div class="col-1-of-4">
                         <div class="feature-box">
@@ -93,7 +93,7 @@
                     </div>
                 </div>
         </section>
-        <section class="section-tours">
+        <section class="section-tours" id="popular-tours">
             <div class="u-center-text u-margin-bottom-large">
                 <h2 class="heading-secondary">Most popular tours</h2>
             </div>
@@ -193,7 +193,7 @@
                 <a href="#" class="btn btn--green">Discover all tours</a>
             </div>
         </section>
-        <section class="section-stories">
+        <section class="section-stories" id="stories">
             <div class="bg-video">
                 <video class="bg-video__content" autoplay muted loop>
                     <source src="img/video.mp4" type="video/mp4">
@@ -237,7 +237,7 @@
                 <a href="#" class="btn-text">Read all stories &rarr;</a>
             </div>
         </section>
-        <section class="section-book">
+        <section class="section-book" id="book-now">
             <div class="row">
                 <div class="book">
                     <div class="book__form">
@@ -330,4 +330,9 @@
             </div>
         </section>
     </body>
+    <script>
+        function closeNav() {
+          document.getElementById("navi-toggle").checked = false;
+        }
+      </script>
 </html>
