@@ -10,21 +10,42 @@
 }
 
 html {
-    //  16px * 0.625 = 10px
+    //////////////////////////////////////////////////////////////////
+    // A web browser's default font-size is usually 16px.
+    // Therefore, 1rem = 16px
+    //
+    // To make our rem calculations easier throughout this web site,
+    // set font-size to 62.6% so that 1rem = 10px.
+    // 
+    // 10px divided by 16px = 0.625
+    // 16px * 0.625 = 10px
     // 1 rem = 10 px
+    //////////////////////////////////////////////////////////////////
+    // - phone......: 1rem = 6px; 6px/16px = 50%
+    // - tab-port...: 1rem = 8px; 8px/16px = 50%
+    // - tab-land...: 1rem = 9px; 9px/16px = 56.25%
+    // - big-desktop: 1rem = 12px; 12px/16px = 75%
+    ////////////////////////////////////////////////////////////////// 
     font-size: 62.5%; 
-                      
-    @include mix.respond(phone) {
+         
+    // Is max-width less than 900px?
+    @include mix.respond(tab-land) {
+        font-size: 56.25%; 
+    }
+
+    // Is max-width less than 600px?
+    @include mix.respond(tab-port) {
         font-size: 50%;
     }
-    @include mix.respond(tab-port) {
-        font-size: 60%;
-    }
-    @include mix.respond(tab-land) {
-        font-size: 70%;
-    }
+
+     // Is max-width less than 600px?
+    //  @include mix.respond(phone) {
+    //     font-size: 37.5%;
+    // }
+
+    // Is min-width greater than 1200px?
     @include mix.respond(big-desktop) {
-        font-size: 80%;
+        font-size: 75%;
     }
 }
 

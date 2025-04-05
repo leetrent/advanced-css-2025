@@ -45,24 +45,19 @@
 html {
   font-size: 62.5%;
 }
-@media (max-width: 37.5em) {
+@media (max-width: 75em) {
   html {
-    font-size: 50%;
+    font-size: 56.25%;
   }
 }
 @media (max-width: 56.25em) {
   html {
-    font-size: 60%;
-  }
-}
-@media (max-width: 75em) {
-  html {
-    font-size: 70%;
+    font-size: 50%;
   }
 }
 @media (min-width: 112.5em) {
   html {
-    font-size: 80%;
+    font-size: 75%;
   }
 }
 
@@ -731,7 +726,6 @@ body {
   color: #f7f7f7;
   background-color: #333;
   text-decoration: none;
-  text-transform: uppercase;
   display: inline-block;
   transition: all 0.2s;
 }
