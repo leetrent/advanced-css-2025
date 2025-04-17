@@ -755,6 +755,11 @@ body {
   -webkit-hyphens: auto;
   hyphens: auto;
 }
+@media (max-width: 37.5em) {
+  .popup__text {
+    column-count: 1;
+  }
+}
 .popup:target {
   opacity: 1;
   visibility: visible;
