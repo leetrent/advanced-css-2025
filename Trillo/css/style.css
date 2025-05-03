@@ -64,14 +64,14 @@ body {
   min-height: 50rem;
 }
 
-.content {
-  display: flex;
-}
-
 .header {
   height: 7rem;
   background-color: var(--color-white);
   border-bottom: var(--color-grey-light-2);
+}
+
+.content {
+  display: flex;
 }
 
 .sidebar {
@@ -83,24 +83,6 @@ body {
   background-color: var(--color-white);
   flex: 1;
   background-color: orangered;
-}
-
-.logo {
-  height: 3.25rem;
-}
-
-.search__icon {
-  height: 2rem;
-  width: 2rem;
-}
-
-.user-nav__icon {
-  height: 2.25rem;
-  width: 2.25rem;
-}
-.user-nav__user-photo {
-  height: 3.25rem;
-  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

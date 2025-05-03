@@ -8,14 +8,17 @@
     min-height: 50rem;
 }
 
-.content {
-    display: flex;
-}
-
 .header {
     height: 7rem;
     background-color: var(--color-white);
     border-bottom: var(--color-grey-light-2);
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+}
+
+.content {
+    display: flex;
 }
 
 .sidebar {

@@ -1,46 +1,76 @@
-.logo {
-    height: 3.25rem;
-}
+// .logo {
+//     height: 3.25rem;
+//     margin-left: 3rem;
+// }
 
-.search {
-   &__input {
+// .search {
+//     background-color: orangered;
+//     flex: 0 0 40%;
 
-   } 
+//    &__input {
+//     font-family: inherit;
+//     font-size: inherit;
+//     color: inherit;
+//     background-color: var(--color-grey-light-2);
+//     border: none;
+//     border-radius: 100px;
+//     padding: 0.7rem 2rem;
+//     width: 90%;
 
-   &__button {
+//     &:focus {
+//         outline: none;
+//         width: 100%;
+//         background-color: var(--color-grey-light-3);
+//         transition: all 0.2s;
+//         margin-right: -3.5rem;
+//     }
 
-   }
+//    } 
 
-   &__icon {
-    height: 2rem;
-    width: 2rem;
-   }
-}
+//    &__button {
+//         border: none;
+//         background-color: var(--color-grey-light-2);
 
-.user-nav {
-    &__icon-box {
+//         &:focus {
+//             outline: none;
+//         }
 
-    }
+//         &:active {
+//             transform: translateY(2px);
+//         }
+//    }
 
-    &__icon {
-        height: 2.25rem;
-        width: 2.25rem;
-    }
+//    &__icon {
+//     height: 2rem;
+//     width: 2rem;
+//    }
+// }
 
-    &__notification {
+// .user-nav {
+//     background-color: greenyellow;
+//     &__icon-box {
 
-    }
+//     }
 
-    &__user {
+//     &__icon {
+//         height: 2.25rem;
+//         width: 2.25rem;
+//     }
 
-    }
+//     &__notification {
 
-    &__user-photo {
-        height: 3.25rem;
-        border-radius: 50%;
-    }
+//     }
+
+//     &__user {
+
+//     }
+
+//     &__user-photo {
+//         height: 3.25rem;
+//         border-radius: 50%;
+//     }
     
-    &__user-name {
+//     &__user-name {
 
-    }
-}
+//     }
+// }
