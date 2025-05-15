@@ -208,6 +208,7 @@
 .overview {
     display: flex;
     align-items: center;
+    border-bottom: var(--line);
 
     &__heading {
         font-size: 2.25rem;
